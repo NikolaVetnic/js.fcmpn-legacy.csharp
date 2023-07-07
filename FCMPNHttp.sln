@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCMPNHttp", "FCMPNHttp\FCMPNHttp.csproj", "{F8CDEE38-10FB-43EE-938D-519F7226B86D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8CDEE38-10FB-43EE-938D-519F7226B86D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8CDEE38-10FB-43EE-938D-519F7226B86D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8CDEE38-10FB-43EE-938D-519F7226B86D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8CDEE38-10FB-43EE-938D-519F7226B86D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86721032-8CAC-4D4E-9706-5B339212589D}
+	EndGlobalSection
+EndGlobal
