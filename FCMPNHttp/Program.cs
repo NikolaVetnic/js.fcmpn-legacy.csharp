@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 using System.Text;
 
 public class Program
@@ -12,9 +13,18 @@ public class Program
     {
         // these variables are set as environment variables in zsh, in order to use them run VS from the terminal with
         // >> open /Applications/Visual\ Studio.app 
-        var serverKey = Environment.GetEnvironmentVariable("SERVER_KEY");
-        var deviceToken = Environment.GetEnvironmentVariable("DEVICE_TOKEN");
-        var accRef = Environment.GetEnvironmentVariable("ACC_REF");
+        // var serverKey = Environment.GetEnvironmentVariable("SERVER_KEY");
+        // var deviceToken = Environment.GetEnvironmentVariable("DEVICE_TOKEN");
+        // var accRef = Environment.GetEnvironmentVariable("ACC_REF");
+
+        // since environment variables didn't work I had to manage secrets like this
+        var builder = new ConfigurationBuilder();
+        builder.AddUserSecrets<Program>();
+        var config = builder.Build();
+
+        var serverKey = config["ServerKey"];
+        var deviceToken = config["DeviceToken"];
+        var accRef = config["AccRef"];
 
         // preparing the request body, method #1
         var messageInformation = new
